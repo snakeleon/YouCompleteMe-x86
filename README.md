@@ -1,7 +1,5 @@
-Vim YouCompleteMe for Windows - x86 (Haroogan's Building)
+YouCompleteMe: a code-completion engine for Vim
 ===============================================
-
-Details please visit [Vim YouCompleteMe for Windows](https://bitbucket.org/Haroogan/vim-youcompleteme-for-windows)
 
 [![Build Status](https://travis-ci.org/Valloric/YouCompleteMe.png?branch=master)](https://travis-ci.org/Valloric/YouCompleteMe)
 
