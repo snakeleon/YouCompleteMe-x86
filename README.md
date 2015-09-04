@@ -2045,8 +2045,11 @@ This software is licensed under the [GPL v3 license][gpl].
 
 支持架构:
 
-    - x86 (x86-32, x32, i686); [YouCompleteMe-x86][YouCompleteMe-x86]
-    - x64 (x86-64, amd64); [YouCompleteMe-X64][YouCompleteMe-x64]
+    - x86 (x86-32, x32, i686);
+    - x64 (x86-64, amd64);
+
+[YouCompleteMe-x86][YouCompleteMe-x86]
+[YouCompleteMe-x64][YouCompleteMe-x64]
 
 NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可正常使用。
 
@@ -2114,8 +2117,8 @@ NOTE: 默认的全局脚本指定索引当前目录下的头文件，为了不�
         Please contact the application's support team for more
         information.
 
-引起这个头痛问题的是因为msvcr90.dll版本兼容性，首先确保已经更新了官方最新的Visual C 运行库，默认Win7 SP1 已经带有些运行库，
-再排查你的系统环境变量 PATH 中，有没有其它的 msvcr90.dll 文件存在; 如果有，请将其删除或者备份改名，大可放心，你的相关程序
+引起这个头痛问题的是因为msvcr90.dll版本兼容性，首先确保已经更新了官方最新的Visual C 运行库，默认Win7 SP1 已经带有此运行库，
+再排查你的系统环境变量 PATH 中，有没有其它的 msvcr90.dll 文件存在；如果有，请将其删除或者备份改名，大可放心，你的相关程序
 都依然能够很好的工作(前提是你的系统已经更新了最新的相关运行库文件)。
 
 
