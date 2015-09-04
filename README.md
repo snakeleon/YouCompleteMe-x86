@@ -2018,6 +2018,8 @@ License
 This software is licensed under the [GPL v3 license][gpl].
 © 2015 YouCompleteMe contributors
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Valloric/youcompleteme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 
 中文入门指引
 ------------
@@ -2032,6 +2034,7 @@ This software is licensed under the [GPL v3 license][gpl].
 - clang版本: 3.70 (2015.09.01) [Clang][Clang]
 
 支持操作系统:
+
     - Windows 2000
     - Windows XP
     - Windows Vista
@@ -2040,6 +2043,7 @@ This software is licensed under the [GPL v3 license][gpl].
     - Windows 10
 
 支持架构:
+
     - x86 (x86-32, x32, i686); [YouCompleteMe-x86][YouCompleteMe-x86]
     - x64 (x86-64, amd64); [YouCompleteMe-X64][YouCompleteMe-x64]
 
@@ -2062,7 +2066,7 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
 
 ###使用技巧
 
-1. 我自己使用的加载配置项(Vimrc)片段:
+- 1. 我自己使用的加载配置项(Vimrc)片段:
 
 " 按操作系统选择使用版本:
 
@@ -2074,7 +2078,7 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
         Bundle 'Valloric/YouCompleteMe'
     endif
 
-2. 全局python脚本(libclang工作方式):
+- 2. 全局python脚本(libclang工作方式):
 
 " 加载默认全局脚本配置文件:
 
@@ -2090,7 +2094,7 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
         将该个项目的 .ycm_extra_conf.py 文件放在该项目目录下，注意其中项目语言 如果是C项目请将 -x 项后的 c++ 改为 c ,
         其中编译特性使用了c++11 (-std=c++11), 使用请根据具体情况调整。
 
-3. 如果你使用的VIM for Windows版本太低或支持的特性不满足自己的需求，自己编译又麻烦;那么特向这里有一个大神编译好的:
+- 3. 如果你使用的VIM for Windows版本太低或支持的特性不满足自己的需求，自己编译又麻烦;那么特向这里有一个大神编译好的:
     - [Vim builds for Windows][Vim builds for Windows]
     此版本更新维护较频繁，官方出新补丁时都会跟上，如果大家喜欢可以在页面下方有编译者的E-Mail可以联系，或者赞助其服务器的租金。
 
@@ -2116,7 +2120,7 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
 
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Valloric/youcompleteme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 
 [Clang]: http://clang.llvm.org/
 [vundle]: https://github.com/gmarik/vundle#about
