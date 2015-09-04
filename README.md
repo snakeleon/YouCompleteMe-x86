@@ -2027,10 +2027,11 @@ This software is licensed under the [GPL v3 license][gpl].
 该入门指引参考了作者[Alexander Shukaev][Alexander Shukaev] （原Haroogan）的文档说明，和YouCompleteMe团队官方文档的指引。
 该中文入门指引将带你解决安装与配置使用YouCompleteMe 插件的问题，内容只做浅显的说明，
 其它未涉及具体的问题请查看官方说明文档。
+（PS: 此版本是针对 Windows 系统，Linux系统编译太方便了，官方文档已经写的很明白了）
 
 ###关于版本
 
-- YouCompleteMe核心版本: 17 (2015.09.02) 参考官方指引编译
+- YouCompleteMe核心版本: 17 (2015.09.02) 静态编译
 - clang版本: 3.70 (2015.09.01) [Clang][Clang]
 
 支持操作系统:
@@ -2047,11 +2048,11 @@ This software is licensed under the [GPL v3 license][gpl].
     - x86 (x86-32, x32, i686); [YouCompleteMe-x86][YouCompleteMe-x86]
     - x64 (x86-64, amd64); [YouCompleteMe-X64][YouCompleteMe-x64]
 
-NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可使用。
+NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可正常使用。
 
 ###脚本配置
 
-自用的 .ycm_extra_conf.py 模板文件在 python目录，(默认全局加载了该文件)
+自用的 .ycm_extra_conf.py 模板文件在 python目录，(可以默认全局加载该文件，参考[使用技巧][#使用技巧]第2条)
 配置中相关的编译器编译开关请参考clang编译器手册自己增补。
 关于头文件的搜索配置方法如下:
 
@@ -2066,7 +2067,7 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
 
 ###使用技巧
 
-- 1. 我自己使用的加载配置项(Vimrc)片段:
+- 1. 我自己使用的加载配置项(Vimrc中配置)片段:
 
 " 按操作系统选择使用版本:
 
@@ -2078,7 +2079,7 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
         Bundle 'Valloric/YouCompleteMe'
     endif
 
-- 2. 全局python脚本(libclang工作方式):
+- 2. 全局python脚本(libclang工作方式)，Vimrc中配置:
 
 " 加载默认全局脚本配置文件:
 
@@ -2090,11 +2091,11 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
         let g:ycm_global_ycm_extra_conf = $HOME.'/.vim/bundle/YouCompleteMe/python/.ycm_extra_conf.py'
     endif
 
-- NOTE: 默认的全局脚本指定索引当前目录下的头文件，为了不想影响其它项目可以针对不同项目单独设置脚本文件;
-        将该个项目的 .ycm_extra_conf.py 文件放在该项目目录下，注意其中项目语言 如果是C项目请将 -x 项后的 c++ 改为 c ,
-        其中编译特性使用了c++11 (-std=c++11), 使用请根据具体情况调整。
+NOTE: 默认的全局脚本指定索引当前目录下的头文件，为了不想影响其它项目可以针对不同项目单独设置脚本文件;
+      将该个项目的 .ycm_extra_conf.py 文件放在该项目目录下，注意其中项目语言 如果是C项目请将 -x 项后的 c++ 改为 c ,
+      其中编译特性使用了c++11 (-std=c++11), 使用请根据具体情况调整。
 
-- 3. 如果你使用的VIM for Windows版本太低或支持的特性不满足自己的需求，自己编译又麻烦;那么特向这里有一个大神编译好的:
+- 3. 如果你使用的VIM for Windows版本太低或支持的特性不满足自己的需求，自己编译又麻烦；那么特别推荐一个大神编译好的:
     - [Vim builds for Windows][Vim builds for Windows]
     此版本更新维护较频繁，官方出新补丁时都会跟上，如果大家喜欢可以在页面下方有编译者的E-Mail可以联系，或者赞助其服务器的租金。
 
