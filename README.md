@@ -2167,7 +2167,7 @@ NOTE: 默认的全局脚本指定索引当前目录下的头文件，为了不�
 [Gocode]: https://github.com/nsf/gocode
 [TSServer]: https://github.com/Microsoft/TypeScript/tree/master/src/server
 [NeoBundle]: https://github.com/Shougo/neobundle.vim
-[YouCompleteMe-x86]: https//github.com/snakeleon/YouCompleteMe-x86
-[YouCompleteMe-x64]: https//github.com/snakeleon/YouCompleteMe-x64
+[YouCompleteMe-x86]: https://github.com/snakeleon/YouCompleteMe-x86
+[YouCompleteMe-x64]: https://github.com/snakeleon/YouCompleteMe-x64
 [Vim builds for Windows]: https://tuxproject.de/projects/vim/
 [Alexander Shukaev]: https://bitbucket.org/Alexander-Shukaev/vim-youcompleteme-for-windows
