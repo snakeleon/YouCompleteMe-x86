@@ -2064,7 +2064,8 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
 
 1. 我自己使用的加载配置项(Vimrc)片段:
 
-    "按操作系统选择使用版本
+" 按操作系统选择使用版本:
+
     if has("win64")
         Bundle 'snakeleon/YouCompleteMe-x64'
     elseif has("win32")
@@ -2075,7 +2076,8 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
 
 2. 全局python脚本(libclang工作方式):
 
-    " 加载默认全局脚本配置文件
+" 加载默认全局脚本配置文件:
+
     if has("win64")
         let g:ycm_global_ycm_extra_conf = $VIM.'/vimfiles/bundle/YouCompleteMe-x64/python/.ycm_extra_conf.py'
     elseif has("win32")
@@ -2084,9 +2086,9 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
         let g:ycm_global_ycm_extra_conf = $HOME.'/.vim/bundle/YouCompleteMe/python/.ycm_extra_conf.py'
     endif
 
-    - NOTE: 默认的全局脚本指定索引当前目录下的头文件，为了不想影响其它项目可以针对不同项目单独设置脚本文件;
-            将该个项目的 .ycm_extra_conf.py 文件放在该项目目录下，注意其中项目语言 如果是C项目请将 -x 项后的 c++ 改为 c ,
-            其中编译特性使用了c++11 (-std=c++11), 使用请根据具体情况调整。
+- NOTE: 默认的全局脚本指定索引当前目录下的头文件，为了不想影响其它项目可以针对不同项目单独设置脚本文件;
+        将该个项目的 .ycm_extra_conf.py 文件放在该项目目录下，注意其中项目语言 如果是C项目请将 -x 项后的 c++ 改为 c ,
+        其中编译特性使用了c++11 (-std=c++11), 使用请根据具体情况调整。
 
 3. 如果你使用的VIM for Windows版本太低或支持的特性不满足自己的需求，自己编译又麻烦;那么特向这里有一个大神编译好的:
     - [Vim builds for Windows][Vim builds for Windows]
@@ -2095,7 +2097,7 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
 
 ###Visual C Runtime问题
 
-    如果各位在启动遇到如下错误提示:
+如果各位在启动遇到如下错误提示:
 
         Runtime Error!
 
@@ -2107,9 +2109,9 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
         Please contact the application's support team for more
         information.
 
-    引起这个头痛问题的是因为msvcr90.dll版本兼容性，首先确保已经更新了官方最新的Visual C 运行库，默认Win7 SP1 已经带有些运行库，
-    再排查你的系统环境变量 PATH 中，有没有其它的 msvcr90.dll 文件存在; 如果有，请将其删除或者备份改名，大可放心，你的相关程序
-    都依然能够很好的工作(前提是你的系统已经更新了最新的相关运行库文件)。
+引起这个头痛问题的是因为msvcr90.dll版本兼容性，首先确保已经更新了官方最新的Visual C 运行库，默认Win7 SP1 已经带有些运行库，
+再排查你的系统环境变量 PATH 中，有没有其它的 msvcr90.dll 文件存在; 如果有，请将其删除或者备份改名，大可放心，你的相关程序
+都依然能够很好的工作(前提是你的系统已经更新了最新的相关运行库文件)。
 
 
 
@@ -2159,3 +2161,4 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
 [YouCompleteMe-x86]: https//github.com/snakeleon/YouCompleteMe-x86
 [YouCompleteMe-x64]: https//github.com/snakeleon/YouCompleteMe-x64
 [Vim builds for Windows]: https://tuxproject.de/projects/vim/
+[Alexander Shukaev]: https://bitbucket.org/Alexander-Shukaev/vim-youcompleteme-for-windows
