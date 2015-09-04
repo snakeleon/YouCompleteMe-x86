@@ -2048,8 +2048,9 @@ This software is licensed under the [GPL v3 license][gpl].
     - x86 (x86-32, x32, i686);
     - x64 (x86-64, amd64);
 
-[YouCompleteMe-x86][YouCompleteMe-x86]
-[YouCompleteMe-x64][YouCompleteMe-x64]
+[YouCompleteMe-x86][YouCompleteMe-x86] for windows 32bit
+
+[YouCompleteMe-x64][YouCompleteMe-x64] for windows 64bit
 
 NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可正常使用。
 
