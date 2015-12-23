@@ -2437,7 +2437,8 @@ NOTE: 该版本已经集成编译好的文件，直接安装加以配置就可�
 
 - 2. 全局python脚本(libclang工作方式)，Vimrc中配置:
 
-    " 加载默认全局脚本配置文件:
+" 加载默认全局脚本配置文件:
+
     if has("win64")
         let g:ycm_global_ycm_extra_conf = $VIM.'/vimfiles/bundle/YouCompleteMe-x64/python/.ycm_extra_conf.py'
     elseif has("win32")
