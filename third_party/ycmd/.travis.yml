@@ -1,0 +1,42 @@
+language: csharp
+os:
+  - linux
+  - osx
+sudo: false
+mono:
+  - beta
+before_install:
+  - git submodule update --init --recursive
+install:
+  # source because it sets up env vars on some platforms
+  - source travis/travis_install.sh
+compiler:
+  - gcc
+script: ./run_tests.py
+env:
+  global:
+    - MONO_THREADS_PER_CPU=2000
+    - MONO_MANAGED_WATCHER=disabled
+    # Travis can run out of RAM when compiling if we don't prevent parallelization.
+    - YCM_CORES=1
+  matrix:
+    - USE_CLANG_COMPLETER=true YCMD_PYTHON_VERSION=2.7
+    - USE_CLANG_COMPLETER=false YCMD_PYTHON_VERSION=2.7
+    - USE_CLANG_COMPLETER=true YCMD_PYTHON_VERSION=2.6
+    - USE_CLANG_COMPLETER=false YCMD_PYTHON_VERSION=2.6
+addons:
+  apt:
+    sources:
+     - ubuntu-toolchain-r-test
+     - deadsnakes
+    packages:
+     - g++-4.8
+     - python2.6
+     - python2.6-dev
+     - python2.7
+     - python2.7-dev
+     - python-virtualenv
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - $HOME/.dnx/packages
