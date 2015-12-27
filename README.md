@@ -777,7 +777,7 @@ your file.
 
 #### Quick start
 
-1. Ensure that you have enabled the Tern completer. See the 
+1. Ensure that you have enabled the Tern completer. See the
    [installation guide](#installation) for details.
 
 2. Create a `.tern-project` file in the root directory of your JavaScript
@@ -2569,13 +2569,12 @@ This software is licensed under the [GPL v3 license][gpl].
 中文入门指引
 ------------
 
-首先本中文入门指引只涉及 YouComplete 插件中的 C-家族（C/C++/Objective-C/Objective-C++）的自动补全引擎 ycmd 的安装与配置，
-其它所支持语言的补全引擎请参阅官方安装配置说明。
+首先本中文入门指引只涉及 YouComplete 插件中 C-家族（C/C++/Objective-C/Objective-C++）的自动补全引擎 ycmd 的安装与配置，
+这里仅作简单的说明，而其它所支持语言的补全引擎请参阅官方安装配置说明。
 该入门指引参考了作者[Alexander Shukaev][Alexander Shukaev] （原Haroogan）的文档说明，和YouCompleteMe团队官方文档的指引。
-这里只对使用 YouCompleteMe 插件对C-家族（C/C++/Objective-C/Objective-C++）的自动补全问题做浅显的说明，
-其它未涉及具体的问题请查看官方说明文档。
-（PS: 此版本只针对 Windows 系统，已经集成编译好的 ycmd 引擎，所以同时支持 Windows 版的 Emacs 的使用。
-    Linux系统安装编译太方便了，官方文档已经写的很详尽。）
+
+（PS: 此版本已经集成编译好的基于Windows系统的 ycmd 引擎，所以同时支持 Windows 版的 Emacs 的使用。
+  Linux系统安装编译太方便了，官方文档已经写的很详尽。）
 
 ###关于版本
 
