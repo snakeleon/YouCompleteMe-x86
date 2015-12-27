@@ -42,6 +42,7 @@ ycm_core_tests
 # also copies some cruft files we don't need; this ignores them
 cpp/BoostParts/libs/*/build
 cpp/BoostParts/libs/*/test
+cpp/build
 
 # Exclude auto generated vim doc tags.
 doc/tags
